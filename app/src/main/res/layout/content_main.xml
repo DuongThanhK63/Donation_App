@@ -27,4 +27,16 @@
         android:layout_alignParentStart="true"
         android:layout_marginTop="27dp"
         android:layout_alignEnd="@+id/donateTitle" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/donateButton"
+        android:id="@+id/donateButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="47dp" />
+
+
 </RelativeLayout>
