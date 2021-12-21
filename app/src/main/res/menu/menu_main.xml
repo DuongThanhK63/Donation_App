@@ -7,4 +7,17 @@
         android:orderInCategory="100"
         android:title="@string/action_settings"
         app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menuReport"
+        android:orderInCategory="100"
+        android:title="@string/menuReport"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/menuDonate"
+        android:orderInCategory="100"
+        android:title="@string/menuDonate"
+        app:showAsAction="never"/>
+
 </menu>
