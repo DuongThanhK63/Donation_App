@@ -39,6 +39,7 @@
         android:layout_marginBottom="47dp"
         android:onClick="donateButtonPressed"/>
 
+
     <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="match_parent"
