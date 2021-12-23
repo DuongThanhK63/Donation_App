@@ -56,22 +56,6 @@ public class MainActivity extends Base {
         progressBar.setMax(10000);
         amountTotal.setText("$0");
     }
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item)
-    {
-        switch (item.getItemId())
-        {
-            case R.id.menuReport : startActivity (new Intent(this, Report.class));
-                break;
-        }
-        return super.onOptionsItemSelected(item);
-    }
     public void donateButtonPressed (View view)
     {
         String method = paymentMethod.getCheckedRadioButtonId() == R.id.PayPal ?
@@ -91,4 +75,5 @@ public class MainActivity extends Base {
             amountTotal.setText(totalDonatedStr);
         }
     }
+
 }
