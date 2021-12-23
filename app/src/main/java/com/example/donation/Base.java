@@ -70,4 +70,6 @@ public class Base extends AppCompatActivity
     {
         startActivity (new Intent(this, MainActivity.class));
     }
+
+    public void reset(MenuItem item) {}
 }
