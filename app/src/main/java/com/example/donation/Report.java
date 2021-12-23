@@ -22,4 +22,10 @@ public class Report extends Base
         DonationAdapter adapter = new DonationAdapter(this, app.dbManager.getAll());
         listView.setAdapter(adapter);
     }
+
+    public void reset(MenuItem item) {
+        app.dbManager.reset();
+        app.totalDonated = 0;
+        donate(item);
+    }
 }

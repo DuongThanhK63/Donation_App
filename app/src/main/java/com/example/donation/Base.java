@@ -42,7 +42,7 @@ public class Base extends AppCompatActivity {
         MenuItem reset = menu.findItem(R.id.menuReset);
         if(app.dbManager.getAll().isEmpty())
         {
-            report.setEnabled(false);
+            report.setEnabled(true);
             reset.setEnabled(false);
         }
         else {
@@ -60,7 +60,7 @@ public class Base extends AppCompatActivity {
         else {
             report.setVisible(false);
             donate.setVisible(true);
-            reset.setVisible(false);
+            reset.setVisible(true);
         }
         return true;
     }
